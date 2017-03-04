@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>抽屉式手风琴效果</title>
+  <style type="text/css">
+	*{margin:0;padding:0;}
+	#con{width:1120px;height:270px;padding:10px 0px 0px 10px;margin:100px auto 0px;box-shadow:0px 0px 10px #000;}
+	#con ul{width:1110px;height:260px;}
+	#con ul li{list-style-type:none;width:46px;height:260px;float:left;position:relative;overflow:hidden;}
+	#con ul .first{width:46px;}
+	#con ul li h3{width:16px;height:240px;background:#e97e52;color:#fff;font-size:16px;font-family:"微软雅黑";padding:20px 15px 0px 15px;}
+	#con ul li .ti2{background:#0674f0;}
+	#con ul li .ti3{background:#17a67b;}
+	#con ul li .ti4{background:#ef4300;}
+	#con ul li .Course{width:920px;height:210px;position:absolute;top:25px;;left:48px;}
+	#con ul li .Course .main{width:210px;height:190px;margin-top:10px;margin-left:15px;box-shadow:0px 0px 10px #000;float:left;}
+	#con ul li .Course .main img{padding:5px 5px 2px 5px;}
+	#con ul li .Course .main p{text-align:center;}
+  </style>
+ </head>
+ <body>
+	<div id="con">
+		<ul>
+			<li class="first">
+				<h3 class="ti1">IT培训</h3>
+				<div class="Course">
+					<div class="main">
+						<img src="images/c1.jpg"/>
+						<p>网页制作</p>
+					</div>
+					<div class="main">
+						<img src="images/c2.jpg"/>
+						<p>java开发</p>
+					</div>
+					<div class="main">
+						<img src="images/c3.jpg"/>
+						<p>ios开发</p>
+					</div>
+					<div class="main">
+						<img src="images/c4.jpg"/>
+						<p>C++开发</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3 class="ti2">职业技能</h3>
+				<div class="Course">
+					<div class="main">
+						<img src="images/z1.jpg"/>
+						<p>SEO</p>
+					</div>
+					<div class="main">
+						<img src="images/z2.jpg"/>
+						<p>微营销</p>
+					</div>
+					<div class="main">
+						<img src="images/z3.png"/>
+						<p>平面设计零基础速成</p>
+					</div>
+					<div class="main">
+						<img src="images/z4.jpg"/>
+						<p>淘宝美工</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3 class="ti3">兴趣爱好</h3>
+				<div class="Course">
+					<div class="main">
+						<img src="images/x1.png"/>
+						<p>畜牧业</p>
+					</div>
+					<div class="main">
+						<img src="images/x2.png"/>
+						<p>亲子教育</p>
+					</div>
+					<div class="main">
+						<img src="images/x3.png"/>
+						<p>种植业</p>
+					</div>
+					<div class="main">
+						<img src="images/x4.jpg"/>
+						<p>guitar</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3 class="ti4">语言学习</h3>
+				<div class="Course">
+					<div class="main">
+						<img src="images/y1.jpg"/>
+						<p>韩语学习</p>
+					</div>
+					<div class="main">
+						<img src="images/y2.jpg"/>
+						<p>日语学习</p>
+					</div>
+					<div class="main">
+						<img src="images/y3.jpg"/>
+						<p>泰语学习</p>
+					</div>
+					<div class="main">
+						<img src="images/y4.jpg"/>
+						<p>粤语学习</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$("#con ul li").hover(function(){
+			$(this).stop().animate({"width":"970px"},300).siblings("li").stop().animate({"width":"46px"},300);
+		},function(){
+			$(this).stop().animate({"width":"46px"},300).siblings("li").stop().animate({"width":"46px"},300);
+		});
+	</script>
+ </body>
+</html>
